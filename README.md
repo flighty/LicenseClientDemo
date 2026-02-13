@@ -9,15 +9,15 @@
 1. 复制整个 `LicenseClientDemo` 文件夹到你的 WordPress 插件目录
 2. 将 `wordpress-license-integration-example.php` 重命名为你的插件名称
 3. 修改插件配置（在 `inc/LicenseClient.php` 中）：
-   - `QK_LICENSE_API_URL`: 授权验证接口地址
-   - `QK_LICENSE_SECRET_KEY`: API 密钥（重要！必须与授权管理系统config.php里设置的API密钥一致）
-   - `QK_LICENSE_PRODUCT_SLUG`: 产品标识符（重要！必须与后台创建的产品标识符一致）
+   - `QK_LICENSE_API_URL`：授权验证接口地址
+   - `QK_LICENSE_SECRET_KEY`：API 密钥（重要！必须与授权管理系统config.php里设置的API密钥一致）
+   - `QK_LICENSE_PRODUCT_SLUG`：产品标识符（重要！必须与后台创建的产品标识符一致）
 
 ### 2. 配置参数
 
-在 `inc/LicenseClient.php` 中修改以下配置：
+在 inc/LicenseClient.php 中修改以下配置：
 
-```php
+```PHP
 // 授权验证接口地址
 defined('QK_LICENSE_API_URL') || define('QK_LICENSE_API_URL', 'http://你的授权站域名/api/verify.php');
 
@@ -363,7 +363,7 @@ public function scheduled_check() {
 2. **使用 HTTPS**：授权验证接口应使用 HTTPS 协议
 3. **设置合理的检查间隔**：根据授权的重要程度调整检查频率
 4. **错误处理**：捕获验证失败的情况，提供友好的错误提示
-5. **数据验证**：对用户输入的授权码进行验证和清理
+**数据验证**：对用户输入的授权码进行验证和清理
 
 ## 常见问题
 
@@ -411,7 +411,7 @@ A: 检查 `inc/LicenseClient.php` 中的 `QK_LICENSE_PRODUCT_SLUG` 配置是否�
 
 ## 版本历史
 
-### 3.0.0 (2025-02-13)
+### 3.0.0 (2026-02-13) 3.0.0 (2026-02-13)
 - 重构为模块化代码结构
 - LicenseClient.php 放到 inc/ 目录
 - 核心功能分离到 inc/functions.php
@@ -421,7 +421,7 @@ A: 检查 `inc/LicenseClient.php` 中的 `QK_LICENSE_PRODUCT_SLUG` 配置是否�
 - 修复白屏错误（Hook 注册时机问题）
 - 清理调试代码，添加详细注释
 
-### 2.0.0 (2025-01-12)
+### 2.0.0 (2026-01-12)
 - 实现完整的授权管理页面
 - 支持授权状态显示（产品名称、绑定域名、过期时间等）
 - 支持后台自动授权检查（页面加载 + 定时任务）
