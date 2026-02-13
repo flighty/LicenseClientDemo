@@ -1,4 +1,4 @@
-# 轻狂授权管理系统 - WordPress 插件集成指南
+
 
 本文档说明如何将轻狂授权管理系统的授权验证功能快速集成到 WordPress 插件中。
 
@@ -411,7 +411,7 @@ A: 检查 `inc/LicenseClient.php` 中的 `QK_LICENSE_PRODUCT_SLUG` 配置是否�
 
 ## 版本历史
 
-### 3.0.0 (2026-02-13) 3.0.0 (2026-02-13)
+### 3.0.0 (2026-02-13) 
 - 重构为模块化代码结构
 - LicenseClient.php 放到 inc/ 目录
 - 核心功能分离到 inc/functions.php
