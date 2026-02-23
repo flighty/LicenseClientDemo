@@ -137,8 +137,8 @@ LicenseClientDemo/
 |--------|------|------|------|
 | license_key | string | 是 | 授权码 |
 | domain | string | 是 | 授权域名 |
+| product | string | 是 | 产品标识 |
 | version | string | 否 | 插件版本号 |
-| product | string | 否 | 产品标识 |
 | signature | string | 否 | HMAC 签名（可选） |
 
 ### 响应格式
